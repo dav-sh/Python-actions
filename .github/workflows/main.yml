@@ -1,0 +1,24 @@
+name: Python construction
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the project
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/checkout@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test
+        run: pip test
+      
