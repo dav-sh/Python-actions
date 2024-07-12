@@ -1,5 +1,5 @@
 import pytest
-from main import app
+from src.main import app
 
 
 '''
