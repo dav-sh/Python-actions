@@ -1,0 +1,10 @@
+# create venv using -> python -m venv .venv
+# activate venv ->  \.venv\Scripts\activate
+# pip install ./requirements.txt 
+# SQLAlchemy
+mysql-connector-python
+flask
+flask_sqlalchemy
+pytest
+python-dotenv
+pytest-cov
